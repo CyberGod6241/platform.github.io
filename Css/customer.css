@@ -1,0 +1,177 @@
+main {
+  min-height: calc(170vh - 3.5rem - 8rem);
+}
+@media (min-width: 30rem) {
+  main {
+    min-height: calc(120vh - 3.5rem - 8rem);
+  }
+}
+@media (min-width: 30rem) {
+  main {
+    min-height: calc(170vh - 3.5rem - 8rem);
+  }
+}
+
+.Animate {
+  margin-top: 0.7rem;
+}
+@media (min-width: 30rem) {
+  .Animate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3rem auto;
+  }
+}
+
+.Animate_info1 {
+  text-align: right;
+  width: 25rem;
+  padding: 0.9rem;
+  min-height: 8rem;
+}
+
+.Animate_info2 {
+  text-align: left;
+  width: 25rem;
+  padding: 0.9rem;
+  min-height: 8rem;
+}
+
+.Animate_text {
+  min-width: 8rem;
+}
+
+.Animate_image_container {
+  border: 0.05rem solid black;
+  width: 15rem;
+  height: 15rem;
+  margin-left: 2rem;
+  transform: skewX(20deg);
+  overflow: hidden;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 30rem) {
+  .Animate_image_container {
+    max-width: 40rem;
+    width: 60%;
+    height: auto;
+  }
+}
+.Animate_image_container img {
+  width: 100%;
+  height: 100%;
+  transform: skewX(-20deg) scale(1.37);
+  vertical-align: top;
+}
+
+.Customers_subtitle {
+  color: black;
+  opacity: 40%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  margin: 0;
+}
+
+.Animate_head {
+  color: var(--main-color);
+  margin: 0;
+}
+
+.Animate_text {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: black;
+}
+
+.button {
+  text-decoration: none;
+  line-height: 1;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  color: #121212;
+  border: none;
+  cursor: pointer;
+}
+
+.button-decor {
+  position: absolute;
+  inset: 0;
+  background-color: var(--clr);
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+  z-index: 0;
+}
+
+.button-content {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+}
+
+.button__icon {
+  width: 48px;
+  height: 30px;
+  background-color: var(--clr);
+  display: grid;
+  place-items: center;
+}
+
+.button__text {
+  display: inline-block;
+  transition: color 0.2s;
+  padding: 2px 1.5rem 2px;
+  padding-left: 0.75rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+.button:hover .button__text {
+  color: #fff;
+}
+
+.button:hover .button-decor {
+  transform: translate(0);
+}
+
+/* From Uiverse.io by reshades */
+.button2 {
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+  width: 8.5em;
+  height: 2.5em;
+  border-radius: 11px;
+  text-align: right;
+  transition: all 0.6s ease;
+}
+
+.button2:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.button2 svg {
+  width: 1.6em;
+  margin: -0.3em 0.3em 1em;
+  position: absolute;
+  display: flex;
+  transition: all 0.6s ease;
+}
+
+.button2:hover svg {
+  transform: translateX(5px);
+}
+
+.text {
+  margin: 0 1.5em;
+  font-size: small;
+}/*# sourceMappingURL=customer.css.map */
